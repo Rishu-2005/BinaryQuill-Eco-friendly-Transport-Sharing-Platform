@@ -99,7 +99,7 @@ section {
     padding: 20px;
 }
 
-.signin {
+.signup {
     padding: 2rem;
     background-color: rgba(213, 239, 214, 0.3);
     backdrop-filter: blur(8px);
@@ -113,26 +113,26 @@ section {
     align-items: center;
 }
 
-.signin h1 {
+.signup h1 {
     font-size: 2.5rem;
     font-weight: 570;
     color: #3B4820;
     margin-bottom: 1rem;
 }
 
-.signin h3 {
+.signup h3 {
     font-size: 1.2rem;
     color: #3B4820;
     margin-bottom: 1.5rem;
 }
 
-.signin button {
+.signup button {
     background-color: rgba(172, 226, 187, 0.3);
     box-shadow: 3px 7px 80px 0px rgba(0, 0, 0, 0.05);
     border: none;
 }
 
-.signin button:hover {
+.signup button:hover {
     background-color: #ACE2BB;
     border: none;
     cursor: pointer;
@@ -190,7 +190,7 @@ section {
     margin-bottom: 0;
 }
 
-.signin input {
+.signup input {
     background-color: transparent;
     margin: 10px 0;
     border: 2px solid #3B4820;
@@ -205,11 +205,11 @@ section {
     outline: none;
 }
 
-.signin input::placeholder {
+.signup input::placeholder {
     color: rgba(59, 72, 32, 0.7);
 }
 
-#nextbt {
+#createaccbt {
     width: 100%;
     max-width: 400px;
     height: 50px;
@@ -219,7 +219,7 @@ section {
     transition: ease-out 0.3s;
 }
 
-#forgetpswd {
+#signinbt {
     background-color: transparent;
     border: 2px solid #3B4820;
     width: 100%;
@@ -232,18 +232,18 @@ section {
     transition: ease-out 0.3s;
 }
 
-#forgetpswd:hover {
+#signinbt:hover {
     background-color: #3B4820;
     color: white;
 }
 
-.signin p {
+.signup p {
     color: #3B4820;
     font-size: 1rem;
     margin-top: 20px;
 }
 
-.signin p a {
+.signup p a {
     color: #3B4820;
     text-decoration: underline;
 }
@@ -297,16 +297,16 @@ section {
         left: 0;
     }
 
-    .signin {
+    .signup {
         padding: 1.5rem;
         border-radius: 45px;
     }
 
-    .signin h1 {
+    .signup h1 {
         font-size: 3rem;
     }
 
-    .signin h3 {
+    .signup h3 {
         font-size: 1rem;
     }
 
@@ -315,8 +315,8 @@ section {
         height: 45px;
     }
 
-    #nextbt,
-    #forgetpswd {
+    #createaccbt,
+    #signinbt {
         font-size: 1rem;
         height: 45px;
     }
