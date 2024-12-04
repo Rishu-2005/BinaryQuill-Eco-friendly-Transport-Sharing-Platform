@@ -9,14 +9,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background: url(bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body{
     background-color: #85D6A0;
 }
 
@@ -103,12 +96,20 @@ section{
     width: 100%;
 }
 
+.main{
+    background: url(bg.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-size: 100%;
+}
+
 .drivetxt {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     align-items: flex-start;
-    margin-top: 250px;
+    
 }
 
 .drivetxt h1 {
@@ -117,6 +118,8 @@ section{
     font-weight: 400;
     font-style: normal;
     font-size: 6rem;
+    margin-top: 250px;
+    
 }
 
 .drivetxt p {
@@ -132,7 +135,7 @@ section{
     margin: 10px 0;
 }
 
-.btns button {
+.btn {
     margin: 0 10px;
     padding: 5px;
     width: 100%;
@@ -146,12 +149,105 @@ section{
     transition: all 0.3s ease;
 }
 
-.btns button:hover {
+.btn:hover {
     background-color: #ACE2BB;
     color: black;
     cursor: pointer;
 }
 
+
+
+
+.locationsetter{
+    margin: 0 auto;
+    margin-top: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #385C94;
+    width: 100%;
+    max-width: 1482px;
+    height: 100px;
+    border-radius: 20px;
+}
+.locationsetter form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.locationsetter input{
+    width: 100%;
+    max-width: 356px;
+    height: 80px;
+    background-color: #D5EFD6;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 6px;
+    border: none;
+    padding: 20px;
+}
+
+.locationsetter input::placeholder{
+    font-size: 1.5rem;
+    color: #385C94;
+}
+
+.locationsetter button{
+    width: 100%;
+    font-size: 1.5rem;
+    max-width: 356px;
+    height: 80px;
+    padding: 20px;
+    margin: 0 6px;
+}
+.note{
+    margin-top: 50px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #385C94;
+    color: white;
+    text-align: center;
+}
+
+.links h1{
+    font-size: 5.5rem;
+    margin: 25px auto;
+}
+
+.links h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.links p{
+    margin: 25px auto;
+}
+.links p a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.links .btn{
+    margin: 10px auto;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.footer h2, a{
+    color: #3B4820;
+    text-decoration: none;
+}
 @media (max-width:768px) {
     .navbar .menubtn {
         display: block;
@@ -202,6 +298,7 @@ section{
     }
     .drivetxt h1 {
         font-size: 2.5rem;
+        margin-top: 50px;
     }
 
     .btns{
@@ -211,6 +308,49 @@ section{
 
     .btns button{
         margin-bottom: 10px;
+    }
+
+    .main{
+        background-size: cover;
+    }
+
+    .locationsetter{
+        flex-direction: column;
+        width: 400px;
+        height: 430px;
+        align-items: center;
+        margin: auto;
+    }
+    .locationsetter form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .locationsetter input{
+        margin: 10px 0;
+    }
+    .locationsetter button{
+        margin: 10px 0;
+    }
+
+    .links h1{
+        font-size: 2.5rem;
+    }
+
+    .links h2{
+        font-size: 1rem;
+    }
+
+    .links p{
+        font-size: 0.8rem;
+    }
+
+    .footer{
+        font-size: 0.5rem;
+    }
+
+    .footer h2{
+        font-size: 0.8rem;
     }
 
 }
